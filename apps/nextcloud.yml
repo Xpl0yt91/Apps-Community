@@ -25,7 +25,7 @@
     - name: 'Adding Traefik'
       set_fact:
         pg_labels:
-          traefik.frontend.auth.forward.address: '{{gauth}}'
+          traefik.frontend.auth.forward.address: '{{auth}}'
           traefik.protocol: 'https'
           traefik.enable: 'true'
           traefik.https.port: '443'

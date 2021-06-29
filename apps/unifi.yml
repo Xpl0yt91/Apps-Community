@@ -40,7 +40,7 @@
           traefik.backend: 'unifi'
           traefik.enable: 'true'
           traefik.port: '8443/tcp'
-          traefik.frontend.auth.forward.address: '{{gauth}}'
+          traefik.frontend.auth.forward.address: '{{auth}}'
           traefik.frontend.rule: 'Host:{{pgrole}}.{{domain.stdout}}{{tldset}}{{cname}}'
           traefik.frontend.headers.SSLHost: '{{domain.stdout}}'
           traefik.frontend.headers.SSLRedirect: 'true'
